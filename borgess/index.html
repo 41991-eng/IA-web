@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>borgess — portfólio</title>
+  <meta name="description" content="Portfólio de estudante de TI: Python, sistemas e automação.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Three.js via módulos ES (sem framework) -->
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO -->
+  <header class="nav">
+    <a href="#inicio" class="nav__logo">borgess</a>
+    <nav>
+      <a href="#inicio" class="nav__link is-active">Início</a>
+      <a href="#projetos" class="nav__link">Meus Projetos</a>
+      <a href="#sobre" class="nav__link">Sobre Mim</a>
+      <a href="#contato" class="nav__link">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. INÍCIO -->
+    <section id="inicio" class="hero" data-section>
+      <canvas id="scene" aria-label="Palavra borgess em 3D cromado"></canvas>
+      <h1 class="sr-only">borgess</h1>
+      <p class="hero__tag">estudante de TI &middot; python &middot; automação</p>
+      <a href="#projetos" class="hero__scroll" aria-label="Rolar para os projetos">
+        <span>role</span><i></i>
+      </a>
+    </section>
+
+    <!-- 2. MEUS PROJETOS -->
+    <section id="projetos" class="section" data-section>
+      <h2 class="section__title reveal">Meus Projetos</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <div class="card__visual v-python"><span>py</span></div>
+          <div class="card__body">
+            <h3>AG-APP2</h3>
+            <p class="card__lang">Python</p>
+            <p class="card__desc" contenteditable="true" spellcheck="false">Descrição provisória. Edite este texto com o que o projeto faz.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__visual v-java"><span>java</span></div>
+          <div class="card__body">
+            <h3>AG-GUSTAVOWEB</h3>
+            <p class="card__lang">Java</p>
+            <p class="card__desc" contenteditable="true" spellcheck="false">Descrição provisória. Edite este texto com o que o projeto faz.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card__visual v-js"><span>js</span></div>
+          <div class="card__body">
+            <h3>IA-3TRI</h3>
+            <p class="card__lang">JavaScript</p>
+            <p class="card__desc" contenteditable="true" spellcheck="false">Descrição provisória. Edite este texto com o que o projeto faz.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. SOBRE MIM -->
+    <section id="sobre" class="section about" data-section>
+      <h2 class="section__title reveal">Sobre Mim</h2>
+      <p class="about__text reveal">Sou estudante de TI, com interesse em programação, desenvolvimento de sistemas, Python, automação e novas tecnologias.</p>
+      <!-- 4. CONTATO -->
+<section id="contato" class="section contact" data-section>
+  <h2 class="section__title reveal">Contato</h2>
+  <div class="contact__list">
+    <a class="contact__item reveal" href="mailto:rbrb2024borges@gmail.com">rbrb2024borges@gmail.com</a>
+    <a class="contact__item reveal" href="mailto:41991@raphaeldisanto.com.br">41991@raphaeldisanto.com.br</a>
+  </div>
+</section>
+    </section>
+  </main>
+
+  <footer class="footer">borgess</footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
